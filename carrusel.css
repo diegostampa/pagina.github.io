@@ -1,0 +1,40 @@
+.carruselImg{
+    background-color:#1b1726;
+}
+
+.carrusel__container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+    justify-items: center;
+}
+
+.carrusel__body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.carrusel__body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.carrusel__img{  
+    width: 800px;
+    height:600px;
+    object-fit:contain;
+    object-position: 50% 30%;
+}
+
+.carrusel__arrow{
+    width: 100%;
+    cursor: pointer;
+}

@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #1b1726;
+}
+
+:root{
+    --padding-container: 100px 0;
+    --color-title: #1b1726;
+}
+
+.heroAbout{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #ffffff;
+}
+
+.heroAbout::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100% ), url(../images/1366_2000.jpg);
+    background-size:cover;
+    z-index: -1;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero{
+    width: 90%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #ffffff;
+}
+
+.nav{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__title{
+    font-weight: 300;
+}
+
+.nav__link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 4em;
+}
+
+.nav__items{
+    list-style: none;
+}
+
+.nav__links{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.hero__container{
+    max-width: 800px;
+    --padding-container:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.hero__title{
+    font-size: 3em;
+}
+
+.cta{
+    display: inline-block;
+    background-color: #E52F22;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 20px;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
